@@ -1,0 +1,269 @@
+/*Universal Styles*/
+html{
+  font-size: 18px;
+}
+
+body{
+  line-height: 1.4;
+  font-family: Helvetica, sans-serif;
+}
+
+.container{
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.flex{
+    display: flex;
+}
+/*Banner and Navbar*/
+.main{
+  height: 30rem;
+  background: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/tortoiseshell-optics/resources/images/glasses-bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.main-nav{
+  background-color: cadetblue;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  top: 1rem;
+  color: white;
+  font-size: 1rem;
+}
+
+.logo-name img{
+  height: 1.5rem;
+  margin: 0 1rem 0 2rem;
+}
+
+.logo-name{
+  display: flex;
+  align-items: center;
+}
+
+.nav{
+  margin: 1rem 0;
+}
+
+.nav span{
+  padding-right: 2rem;
+  margin: 1rem 0;
+}
+
+.main .flex{
+  justify-content: flex-end;
+}
+
+.main-headline{
+  background-color: white;
+  position: relative;
+  top: 10rem;
+  left: 2rem;
+  padding: 2rem 5rem;
+}
+
+.main-headline h1{
+  font-weight: bold;
+  font-size: 2rem;
+  line-height: 1.2rem;
+  display: block;
+  margin: .5rem 0;
+}
+
+.mobile{
+    display: none;
+}
+
+@media only screen and (max-width: 1024px){
+  .main-nav{
+    top: 0;
+  }
+
+  .main-nav.container{
+      max-width: 100%;
+      margin-left: 0;
+      margin-right: 0;
+  }
+
+  .main{
+    height: 22rem;
+  }
+
+  .main-headline{
+    top: 5rem;
+    left: -2rem;;
+    padding: 1rem 4rem;
+  }
+
+  .main-headline h1{
+    font-size: 1.33rem;
+  }
+}
+
+@media only screen and (max-width: 640px){
+  .mobile{
+    display: block;
+  }
+
+  .desktop{
+    display: none;
+  }
+
+  .logo-name span{
+    display: none;
+  }
+
+  .main .flex{
+    justify-content: center;
+  }
+
+  .main{
+    background-position: 20%;
+    height: 17rem;
+  }
+
+  .main-headline{
+    top: 9rem;
+    left: 0rem;
+    padding: .75rem 0;
+    text-align: center;
+    width: 100%;
+  }
+
+  .main-headline h1{
+    font-size: 1rem;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+/*Images*/
+.images{
+  justify-content: center;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.image-item{
+  height: 8rem;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 5rem;
+}
+
+.margin-right{
+    margin-right: 6rem;
+}
+
+.image-item span{
+    display: block;
+    text-align: center;
+}
+
+.small-width{
+  width: 3.5rem;
+}
+
+.large-width{
+  width: 5rem;
+}
+
+@media only screen and (max-width: 640px){
+    .images{
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: 3.77rem 0;
+    }
+
+    .margin-right{
+      margin-right: 0;
+    }
+
+    .large-width{
+      margin-top: 1.54rem;
+    }
+
+    .image-item{
+      font-size: .77rem;
+    }
+}
+
+/*Philosophy-Appointments*/
+.philosophy-appointments{
+    justify-content: center;
+    margin-bottom: 5rem;
+}
+
+.phil-app span{
+  display: block;
+  font-family: Helvetica;
+  font-weight: bold;
+  font-size: 1rem;
+  color: white;
+  background-color: cadetblue;
+  padding: 0.5rem 1.25rem;
+  max-width: 10rem;
+  margin-bottom: 1rem;
+}
+
+.philosophy-appointments .phil-app{
+  width: 35%;
+  margin-right: 5%;
+}
+
+@media only screen and (max-width: 640px){
+  .philosophy-appointments{
+    flex-direction: column;
+    margin-bottom: 0;
+  }
+
+  .philosophy-appointments .phil-app{
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .phil-app span{
+    display: block;
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .phil-app p{
+    font-size: .77rem;
+    margin-bottom: 4rem;
+  }
+}
+/*Footer*/
+footer{
+  background-color: azure;
+}
+
+footer img{
+  max-height: 1.5rem;
+  margin-left: 2rem;
+  margin-right: 1rem;
+}
+
+.footer{
+  padding: 4rem;
+}
+
+@media only screen and (max-width: 640px){
+  .footer{
+      justify-content: center;
+  }
+
+  .footer div{
+    display: none;
+  }
+
+  .footer img{
+    margin: 0;
+  }
+}
